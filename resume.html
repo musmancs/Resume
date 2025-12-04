@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUHAMMAD USMAN KHAN - CV</title>
+  <style>
+    /* ===== General Styles ===== */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eef2f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .cv-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #0f4c81;
+    }
+
+    h2 {
+      font-size: 20px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      color: #0f4c81;
+    }
+
+    p, li {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header p {
+      margin: 4px 0;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    /* ===== Skills Styling ===== */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    .skill {
+      background-color: #0f4c81;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 600px) {
+      .cv-container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <div class="header">
+      <h1>MUHAMMAD USMAN KHAN</h1>
+      <p>Registration No: 25-CS-063</p>
+      <p>FSc Completed from Superior Group of Colleges</p>
+      <p>BSCS Student at HITEC University, Taxila</p>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: maniniazi001@gmail.com</li>
+        <li>Phone: 03026185263</li>
+        <li>Address: Islamabad, Pakistan</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Summary</h2>
+      <p>I am MUHAMMAD USMAN KHAN, currently enrolled in BSCS at HITEC University Taxila. I completed FSc from Superior Group of Colleges. Seeking internships and project opportunities to build practical skills in software engineering and web development.</p>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">C++</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Git</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Projects / Experience</h2>
+      <p>Student Management System using C++ | Portfolio website | Simple CRUD application</p>
+    </div>
+
+    <div class="section">
+      <h2>How to Contact Me</h2>
+      <p>You will contact me through each of the ways listed below:</p>
+      <ul>
+        <li>Email: maniniazi001@gmail.com</li>
+        <li>Phone: 03026185263</li>
+        <li>Address: Islamabad, Pakistan</li>
+      </ul>
+    </div>
+  </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
